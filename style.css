@@ -23,7 +23,7 @@ nav a{
 }
 
 nav a:nth-child(3) {/*chamar a primeira ancora filha de nav, chamando pseudoclasses ao inves de <nav class="classe">*/
-color: crimson;
+    color: crimson;
 }
 
 nav a:hover {
@@ -32,21 +32,21 @@ nav a:hover {
 }
 
 section{
-height: 300px;
-background-color: purple;
-display: flex;
-align-items: center;
-justify-content: center; /* FLEX DIRECTION ROW: align-itens: vertical, justify-content: horizontal */
+    height: 300px;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* FLEX DIRECTION ROW: align-itens: vertical, justify-content: horizontal */
 }
 
 section div{ /*propriedades aplicadas apenas na div da section*/
-background-color: black;
-height: 200px;
-display: flex;
-flex-direction: column;
-align-items: center; /* FLEX DIRECTION COLUMN: align-itens: horizontal, justify-content: vertical*/
-border-radius: 10px;
-border: 1px solid blue;
+    background-color: black;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* FLEX DIRECTION COLUMN: align-itens: horizontal, justify-content: vertical*/
+    border-radius: 10px;
+    border: 1px solid blue;
 }
 
 section div input {
@@ -59,19 +59,19 @@ section div input:hover {
 }
 
 section div input:focus{ /*pseudoclasse focus relacionada ao clique*/
-background-color:blue;
+    background-color:blue;
 }
 
 div input:nth-child(4) { /*altera o botão acessar*/
-background-color: crimson;
-margin-top:10px;
-width:70%; /* %= em relação ao pai, vw = unidade de medida em relação a largura da página*/
-box-shadow: 1px 2px 1px crimson;/*(+cima -baixo, +direita -esq, +=dissipa -=nitida)
+    background-color: crimson;
+    margin-top:10px;
+    width:70%; /* %= em relação ao pai, vw = unidade de medida em relação a largura da página*/
+    box-shadow: 1px 2px 1px crimson;/*(+cima -baixo, +direita -esq, +=dissipa -=nitida)
 }
 
 div input:nth-child(4):hover { /*altera o botão acessar*/
     color: white;
-    }
+}
 
 input::placeholder {
     color:crimson;
