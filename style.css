@@ -1,3 +1,8 @@
+h3 {
+    color: white;
+    text-shadow: 1px 5px 4px crimson;/*(+cima -baixo, +direita -esq, +=dissipa -=nitida)*/
+}
+
 body {
     margin: 0px;
 }
@@ -12,7 +17,7 @@ nav {
 
 nav a{
     text-decoration: none;
-    text-size: 20px;
+    font-size: 25px;
     color: #fff;
     font-family: 'Cookie', cursive;
 }
@@ -23,4 +28,58 @@ color: crimson;
 
 nav a:hover {
     color: purple;
+    text-decoration: underline;
+}
+
+section{
+height: 300px;
+background-color: purple;
+display: flex;
+align-items: center;
+justify-content: center; /* FLEX DIRECTION ROW: align-itens: vertical, justify-content: horizontal */
+}
+
+section div{ /*propriedades aplicadas apenas na div da section*/
+background-color: black;
+height: 200px;
+display: flex;
+flex-direction: column;
+align-items: center; /* FLEX DIRECTION COLUMN: align-itens: horizontal, justify-content: vertical*/
+border-radius: 10px;
+border: 1px solid blue;
+}
+
+section div input {
+    width: 95%;
+    margin: 5px;
+}
+
+section div input:hover {
+    background-color: black;
+}
+
+section div input:focus{ /*pseudoclasse focus relacionada ao clique*/
+background-color:blue;
+}
+
+div input:nth-child(4) { /*altera o botão acessar*/
+background-color: crimson;
+margin-top:10px;
+width:70%; /* %= em relação ao pai, vw = unidade de medida em relação a largura da página*/
+box-shadow: 1px 2px 1px crimson;/*(+cima -baixo, +direita -esq, +=dissipa -=nitida)
+}
+
+div input:nth-child(4):hover { /*altera o botão acessar*/
+    color: white;
+    }
+
+input::placeholder {
+    color:crimson;
+    font-size:8pt;
+    text-align: center;
+}
+
+input::placeholder:hover {
+    color:white;
+    font-size:8pt;
 }
