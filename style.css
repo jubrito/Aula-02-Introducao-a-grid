@@ -117,3 +117,9 @@ footer div img {
     width: 40px;
     height: 40px;
 }
+
+header{
+    height: 650px;
+    background-image: url(https://cdn-az.allevents.in/banners/88180931daaca8c900c861cc3a5da8bd);
+    background-size: cover;
+}
