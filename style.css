@@ -83,3 +83,37 @@ input::placeholder:hover {
     color:white;
     font-size:8pt;
 }
+
+/*----------------DEMONSTRAÇÃO: ID > CLASSE > ELEMENTO---------------
+footer input, button, p{
+    color: blue;
+}
+footer button{background-color:blue} //elemento
+footer .botao{background-color:red} //classe
+footer #botaozao{background-color:yellow} //id
+
+No HTML:<button class='botao'>Botao 1</button>
+        <button class='botao' id="botaozao">Botao 2</button> <------ ficou vermelho
+        <p>blablabla</p>
+*/
+
+footer {
+    width:100vw;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer div {
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div img {
+    width: 40px;
+    height: 40px;
+}
