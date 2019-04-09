@@ -1,0 +1,26 @@
+body {
+    margin: 0px;
+}
+
+nav {
+    background-color: black;
+    height: 50px;
+    display: flex; /*align precisa do display flex pra funcionar e display deixa no centro verticalmente*/
+    align-items: center;
+    justify-content: space-around; /*espaçamento entre os itens*/
+}
+
+nav a{
+    text-decoration: none;
+    text-size: 20px;
+    color: #fff;
+    font-family: 'Cookie', cursive;
+}
+
+nav a:nth-child(3) {/*chamar a primeira ancora filha de nav, chamando pseudoclasses ao inves de <nav class="classe">*/
+color: crimson;
+}
+
+nav a:hover {
+    color: purple;
+}
