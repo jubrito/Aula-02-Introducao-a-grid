@@ -1,8 +1,8 @@
 h3 {
     color: white;
-    text-shadow: 1px 5px 4px crimson;/*(+cima -baixo, +direita -esq, +=dissipa -=nitida)*/
+    text-shadow: 1px 5px 4px #481c61;/*(+cima -baixo, +direita -esq, +=dissipa -=nitida)*/
 }
-
+  
 body {
     margin: 0px;
 }
@@ -13,6 +13,7 @@ nav {
     display: flex; /*align precisa do display flex pra funcionar e display deixa no centro verticalmente*/
     align-items: center;
     justify-content: space-around; /*espaçamento entre os itens*/
+    border-bottom: 2px solid white;
 }
 
 nav a{
@@ -23,30 +24,32 @@ nav a{
 }
 
 nav a:nth-child(3) {/*chamar a primeira ancora filha de nav, chamando pseudoclasses ao inves de <nav class="classe">*/
-    color: crimson;
+    color: #a247d6;
 }
 
 nav a:hover {
-    color: purple;
+    color: #969696;
     text-decoration: underline;
 }
 
 section{
-    height: 300px;
-    background-color: purple;
+    height: 650px;
+    background-color: rgb(30, 0, 48);
     display: flex;
     align-items: center;
     justify-content: center; /* FLEX DIRECTION ROW: align-itens: vertical, justify-content: horizontal */
 }
 
+
 section div{ /*propriedades aplicadas apenas na div da section*/
     background-color: black;
     height: 200px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center; /* FLEX DIRECTION COLUMN: align-itens: horizontal, justify-content: vertical*/
     border-radius: 10px;
-    border: 1px solid blue;
+    border: 2px solid white;
 }
 
 section div input {
@@ -63,10 +66,11 @@ section div input:focus{ /*pseudoclasse focus relacionada ao clique*/
 }
 
 div input:nth-child(4) { /*altera o botão acessar*/
-    background-color: crimson;
+    background-color: #481c61;
+    color: white;
     margin-top:10px;
-    width:70%; /* %= em relação ao pai, vw = unidade de medida em relação a largura da página*/
-    box-shadow: 1px 2px 1px crimson;/*(+cima -baixo, +direita -esq, +=dissipa -=nitida)
+    width: 98%; /* %= em relação ao pai, vw = unidade de medida em relação a largura da página*/
+    box-shadow: 3px 4px 3px rgb(73, 73, 73);/*(+cima -baixo, +direita -esq, +=dissipa -=nitida)*/
 }
 
 div input:nth-child(4):hover { /*altera o botão acessar*/
@@ -74,7 +78,7 @@ div input:nth-child(4):hover { /*altera o botão acessar*/
 }
 
 input::placeholder {
-    color:crimson;
+    color:#481c61;
     font-size:8pt;
     text-align: center;
 }
@@ -98,8 +102,7 @@ No HTML:<button class='botao'>Botao 1</button>
 */
 
 footer {
-    width:100vw;
-    height: 50px;
+    height: 100px;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -119,7 +122,7 @@ footer div img {
 }
 
 header{
-    height: 650px;
-    background-image: url(https://cdn-az.allevents.in/banners/88180931daaca8c900c861cc3a5da8bd);
+    height: 79px;
+    background-image: url(https://i.stack.imgur.com/1dWd5.png);
     background-size: cover;
 }
