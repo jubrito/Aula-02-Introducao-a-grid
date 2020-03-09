@@ -2,13 +2,13 @@ h3 {
     color: white;
     text-shadow: 1px 5px 4px #481c61;/*(+cima -baixo, +direita -esq, +=dissipa -=nitida)*/
 }
-  
+
 body {
     margin: 0px;
 }
 
 nav {
-    background-color: black;
+    background-color:   black;
     height: 50px;
     display: flex; /*align precisa do display flex pra funcionar e display deixa no centro verticalmente*/
     align-items: center;
@@ -58,11 +58,12 @@ section div input {
 }
 
 section div input:hover {
-    background-color: black;
+    background-color: rgb(207, 207, 207);
 }
 
 section div input:focus{ /*pseudoclasse focus relacionada ao clique*/
-    background-color:blue;
+    background-color:black;
+    color: white;
 }
 
 div input:nth-child(4) { /*altera o botão acessar*/
@@ -83,23 +84,10 @@ input::placeholder {
     text-align: center;
 }
 
-input::placeholder:hover {
+input::placeholder:focus {
     color:white;
     font-size:8pt;
 }
-
-/*----------------DEMONSTRAÇÃO: ID > CLASSE > ELEMENTO---------------
-footer input, button, p{
-    color: blue;
-}
-footer button{background-color:blue} //elemento
-footer .botao{background-color:red} //classe
-footer #botaozao{background-color:yellow} //id
-
-No HTML:<button class='botao'>Botao 1</button>
-        <button class='botao' id="botaozao">Botao 2</button> <------ ficou vermelho
-        <p>blablabla</p>
-*/
 
 footer {
     height: 100px;
@@ -126,3 +114,16 @@ header{
     background-image: url(https://i.stack.imgur.com/1dWd5.png);
     background-size: cover;
 }
+
+/*----------------DEMONSTRAÇÃO: ID > CLASSE > ELEMENTO---------------
+footer input, button, p{
+    color: blue;
+}
+footer button{background-color:blue} //elemento
+footer .botao{background-color:red} //classe
+footer #botaozao{background-color:yellow} //id
+
+No HTML:<button class='botao'>Botao 1</button>
+        <button class='botao' id="botaozao">Botao 2</button> <------ ficou vermelho
+        <p>blablabla</p>
+*/
